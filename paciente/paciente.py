@@ -1,5 +1,5 @@
 class Paciente:
-    def __init__(self, dni, nombre, apellido1, apellido2, direccion, cp, poblacion, pais, fechaNacimiento, estadoCivil, sexo, email, telefono):
+    def __init__(self, dni, nombre, apellido1, apellido2, direccion, cp, poblacion, pais, fechaNacimiento, estadoCivil, genero, email, telefono):
         self.dni = dni
         self.nombre = nombre
         self.apellido1 = apellido1
@@ -10,7 +10,7 @@ class Paciente:
         self.pais = pais
         self.fechaNacimiento = fechaNacimiento
         self.estadoCivil = estadoCivil
-        self.sexo = sexo
+        self.genero = genero
         self.email = email
         self.telefono = telefono
 
@@ -95,12 +95,12 @@ def estadoCivil(self, estadoCivil):
     self.estadoCivil = estadoCivil
 
 @property
-def sexo(self):
-    return self.sexo
+def genero(self):
+    return self.genero
 
-@sexo.setter
-def sexo(self, sexo):
-    self.sexo = sexo
+@genero.setter
+def sexo(self, genero):
+    self.genero = genero
 
 @property
 def email(self):
